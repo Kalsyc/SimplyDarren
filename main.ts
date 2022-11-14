@@ -15,6 +15,7 @@ await start(manifest, {
     {
       selfURL: new URL("./twind.config.ts", import.meta.url).href,
       ...twindConfig,
+      darkMode: "class",
     },
   )],
 });
