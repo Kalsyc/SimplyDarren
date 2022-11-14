@@ -1,4 +1,5 @@
 import { GeneralLayout } from "../../components/layouts/GeneralLayout.tsx";
+import GameFrame from "../../islands/GameFrame.tsx";
 
 export default function CullinaryOne() {
   return (
@@ -8,7 +9,9 @@ export default function CullinaryOne() {
         name="Cullinary 1"
         description="Cullinary 1 Game"
       >
-        <div>Cullinary 1</div>
+        <div class="flex justify-center items-center">
+          <GameFrame gameSrc="https://simplydarren-test.s3.ap-southeast-1.amazonaws.com/CULLinary_WebGL_Build_Prod/index.html" />
+        </div>
       </GeneralLayout>
     </>
   );

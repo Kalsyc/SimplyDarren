@@ -11,7 +11,8 @@ import * as $4 from "./routes/cullinary/cull-2.tsx";
 import * as $5 from "./routes/cullinary/index.tsx";
 import * as $6 from "./routes/index.tsx";
 import * as $$0 from "./islands/Counter.tsx";
-import * as $$1 from "./islands/MainHeaderContent.tsx";
+import * as $$1 from "./islands/GameFrame.tsx";
+import * as $$2 from "./islands/MainHeaderContent.tsx";
 
 const manifest = {
   routes: {
@@ -25,7 +26,8 @@ const manifest = {
   },
   islands: {
     "./islands/Counter.tsx": $$0,
-    "./islands/MainHeaderContent.tsx": $$1,
+    "./islands/GameFrame.tsx": $$1,
+    "./islands/MainHeaderContent.tsx": $$2,
   },
   baseUrl: import.meta.url,
   config,

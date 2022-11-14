@@ -1,4 +1,4 @@
-import { useEffect, useState } from "preact/hooks";
+import { useState } from "preact/hooks";
 
 export default function MainHeaderContent() {
   const isDarkMode: boolean = localStorage.getItem("isDarkMode") == "true";
