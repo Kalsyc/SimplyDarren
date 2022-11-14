@@ -1,8 +1,12 @@
-import { useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 
 export default function MainHeaderContent() {
-  const isDarkMode: boolean = localStorage.getItem("isDarkMode") == "true";
-  const [isDarkModeState, setIsDarkModeState] = useState<boolean>(isDarkMode);
+  const [isDarkModeState, setIsDarkModeState] = useState<boolean>(false);
+
+  useEffect(() => {
+    const isDarkMode: boolean = localStorage.getItem("isDarkMode") == "true";
+    setIsDarkModeState(isDarkMode);
+  }, []);
 
   function toggleDarkMode(currentState: boolean): void {
     const htmlElement: HTMLHtmlElement =
