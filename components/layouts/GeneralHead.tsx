@@ -11,10 +11,12 @@ export function GeneralHead({ ...customMeta }) {
     <Head>
       <title>{meta.title}</title>
       <meta content={meta.description} name="description" />
-      <script>
+      {
+        /* <script>
         if (localStorage.getItem('isDarkMode'))
         document.documentElement.classList.add('dark')
-      </script>
+      </script> */
+      }
       <link rel="icon" href="/favicon.ico" />
       <link rel="stylesheet" href="/global.css" />
     </Head>
