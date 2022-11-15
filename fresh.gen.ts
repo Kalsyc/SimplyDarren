@@ -10,6 +10,7 @@ import * as $3 from "./routes/cullinary/cull-1.tsx";
 import * as $4 from "./routes/cullinary/cull-2.tsx";
 import * as $5 from "./routes/cullinary/index.tsx";
 import * as $6 from "./routes/index.tsx";
+import * as $7 from "./routes/projects/index.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 import * as $$1 from "./islands/GameFrame.tsx";
 import * as $$2 from "./islands/MainHeaderContent.tsx";
@@ -23,6 +24,7 @@ const manifest = {
     "./routes/cullinary/cull-2.tsx": $4,
     "./routes/cullinary/index.tsx": $5,
     "./routes/index.tsx": $6,
+    "./routes/projects/index.tsx": $7,
   },
   islands: {
     "./islands/Counter.tsx": $$0,

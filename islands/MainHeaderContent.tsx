@@ -26,7 +26,7 @@ export default function MainHeaderContent() {
           ? "/simply-darren-logo-dark.svg"
           : "/simply-darren-logo.svg"}
         alt="Simply Darren Logo"
-        class="md:block hidden"
+        class="md:block hidden h-[80%]"
       />
       <img
         src={isDarkModeState
@@ -40,13 +40,13 @@ export default function MainHeaderContent() {
           setIsDarkModeState(!isDarkModeState);
           toggleDarkMode(!isDarkModeState);
         }}
-        class="h-full hover:opacity-50 focus:outline-none"
+        class="h-full hover:animate-pulse focus:outline-none"
         aria-label="Toggle Dark Mode"
       >
         <img
           src={isDarkModeState ? "/dark-mode-icon.png" : "/light-mode-icon.png"}
           alt="Dark Mode Toggle"
-          class="w-auto h-[80%] sm:block hidden"
+          class="w-auto h-[80%] sm:block hidden "
         />
       </button>
     </>

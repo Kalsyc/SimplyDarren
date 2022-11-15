@@ -12,10 +12,12 @@ export type GeneralLayoutProps = {
 export function GeneralLayout({ children, ...customMeta }: GeneralLayoutProps) {
   return (
     <>
-      <div class="min-h-screen bg-primaryLight dark:bg-primaryDark text-fontLight dark:text-fontDark">
+      <div class="min-h-screen bg-primaryLight dark:bg-primaryDark text-fontLight dark:text-fontDark flex flex-col">
         <GeneralHead {...customMeta} />
         <MainHeaderWrapper />
-        {children}
+        <div class="h-[calc(100vh-48px)]">
+          {children}
+        </div>
       </div>
     </>
   );
