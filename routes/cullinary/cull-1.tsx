@@ -9,7 +9,7 @@ export default function CullinaryOne() {
         name="Cullinary 1"
         description="Cullinary 1 Game"
       >
-        <div class="flex justify-center items-center gap-4 h-full">
+        <div class="min-h-[calc(100vh-48px)]">
           <GameFrame gameSrc="https://simplydarren-test.s3.ap-southeast-1.amazonaws.com/CULLinary_WebGL_Build_Prod/index.html" />
         </div>
       </GeneralLayout>

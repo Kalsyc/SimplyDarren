@@ -9,7 +9,7 @@ export default function CullinaryTwo() {
         name="Cullinary 2"
         description="Cullinary 2 Game"
       >
-        <div class="flex justify-center items-center gap-4 h-full">
+        <div class="flex justify-center items-center my-auto">
           <GameFrame gameSrc="https://simplydarren-test.s3.ap-southeast-1.amazonaws.com/CULLv2_WebGLBuild_Prod/index.html" />
         </div>
       </GeneralLayout>

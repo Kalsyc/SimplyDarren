@@ -13,8 +13,8 @@ export default function Projects() {
         name="Projects"
         description="My Projects @ Simply Darren"
       >
-        <div class="flex justify-center items-center gap-4 h-full">
-          <div class="grid">
+        <div class="flex justify-center items-center gap-4 h-full my-8">
+          <div class="grid items-center justify-items-center w-auto gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
             {allProjectCardsInfo.map((value: ProjectCardInfo) => {
               return <ProjectCard projectCardInfo={value}></ProjectCard>;
             })}

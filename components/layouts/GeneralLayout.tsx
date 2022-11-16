@@ -15,7 +15,7 @@ export function GeneralLayout({ children, ...customMeta }: GeneralLayoutProps) {
       <div class="min-h-screen bg-primaryLight dark:bg-primaryDark text-fontLight dark:text-fontDark flex flex-col">
         <GeneralHead {...customMeta} />
         <MainHeaderWrapper />
-        <div class="h-[calc(100vh-48px)]">
+        <div class="min-h-[calc(100vh-48px)]">
           {children}
         </div>
       </div>
