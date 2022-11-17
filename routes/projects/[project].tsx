@@ -17,6 +17,9 @@ export const handler: Handlers = {
 };
 
 export default function ProjectPage(props: PageProps) {
+  if (!props.data.markup) {
+    return <h1>Not found</h1>;
+  }
   return (
     <GeneralLayout
       title={`Simply Darren | ${props.params.project}`}
