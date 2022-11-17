@@ -9,7 +9,7 @@ export const handler: Handlers = {
     const decoder = new TextDecoder("utf-8");
     console.log(Deno.cwd());
     const markdown = decoder.decode(
-      await Deno.readFile(`${Deno.cwd()}/static/markdown/${project}.md`),
+      await Deno.readFile(`markdown/${project}.md`),
     );
 
     const markup = render(markdown);
