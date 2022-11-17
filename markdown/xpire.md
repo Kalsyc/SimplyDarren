@@ -1,10 +1,8 @@
-<h1>Xpire</h1>
+<h1 id="h1-md-ele">Xpire</h1>
 
-<h2>Expiry Date Tracker Desktop App written in Java</h2>
+<h2 id="h2-md-ele">Expiry Date Tracker Desktop App written in Java</h2>
 
-<p>
-  <img alt="" src="../projects/cards/xpire-img.png" width="50%" height="auto" />
-</p>
+<img align="center" alt="" src="../projects/cards/xpire-img.png" width="50%" height="auto" />
 
 ## Preface
 

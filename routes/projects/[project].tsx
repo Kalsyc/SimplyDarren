@@ -17,7 +17,7 @@ export const handler: Handlers = {
       return ctx.render({ markup: "Not found" });
     }
 
-    const markup = render(markdown);
+    const markup = render(markdown, {});
     return ctx.render({ markup: markup });
   },
 };

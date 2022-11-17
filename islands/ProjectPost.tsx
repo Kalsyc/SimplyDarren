@@ -9,7 +9,9 @@ export default function ProjectPost(props: ProjectPostProps) {
 
   useLayoutEffect(() => {
     if (el.current) {
+      console.log(props.markup);
       el.current.innerHTML = props.markup;
+      el.current.classList.add("markdown-body");
     }
   });
 
@@ -19,7 +21,7 @@ export default function ProjectPost(props: ProjectPostProps) {
         data-color-mode="dark"
         data-light-theme="light"
         data-dark-theme="dark"
-        class="w-[60%] markdown-body"
+        class="w-[60%]"
         ref={el}
       >
       </div>
