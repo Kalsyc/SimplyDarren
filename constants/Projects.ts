@@ -57,3 +57,7 @@ export const allProjectCardsInfo: ProjectCardInfo[] = [
     urlLink: "/cullinary/cull-2",
   },
 ];
+
+export const titleNameToPageMap: { [x: string]: string } = {
+  xpire: "Xpire",
+};

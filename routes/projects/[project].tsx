@@ -2,6 +2,7 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import { render } from "https://deno.land/x/gfm@0.1.26/mod.ts";
 import { GeneralLayout } from "../../components/layouts/GeneralLayout.tsx";
 import ProjectPost from "../../islands/ProjectPost.tsx";
+import { titleNameToPageMap } from "../../constants/Projects.ts";
 
 export const handler: Handlers = {
   async GET(_req, ctx) {
@@ -18,7 +19,7 @@ export const handler: Handlers = {
     }
 
     const markup = render(markdown, {});
-    return ctx.render({ markup: markup });
+    return ctx.render({ markup: markup, title: titleNameToPageMap[project] });
   },
 };
 
@@ -28,7 +29,7 @@ export default function ProjectPage(props: PageProps) {
   }
   return (
     <GeneralLayout
-      title={`Simply Darren | ${props.params.project}`}
+      title={`Simply Darren | ${props.data.title}`}
       name={props.params.project}
       description={`Project Description for ${props.params.project}`}
     >
