@@ -10,7 +10,7 @@ export const handler: Handlers = {
     let markdown;
     try {
       markdown = decoder.decode(
-        await Deno.readFile(`markdown/${project}.md`),
+        await Deno.readFile(`./markdown/${project}.md`),
       );
     } catch (err) {
       console.log(err);
