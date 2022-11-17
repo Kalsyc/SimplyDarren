@@ -12,7 +12,7 @@ export const allProjectCardsInfo: ProjectCardInfo[] = [
     tagName: "App Dev",
     description: "Expiry Date Tracker Desktop App",
     title: "Xpire",
-    urlLink: "/",
+    urlLink: "/projects/xpire",
   },
   {
     imageLink: "/projects/cards/petsaver-img.jpeg",

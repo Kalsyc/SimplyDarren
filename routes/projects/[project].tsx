@@ -6,13 +6,13 @@ import ProjectPost from "../../islands/ProjectPost.tsx";
 export const handler: Handlers = {
   async GET(_req, ctx) {
     const project = ctx.params.project;
-    console.log(project);
     const decoder = new TextDecoder("utf-8");
     const markdown = decoder.decode(
-      await Deno.readFile(`/markdown/${project}.md`),
+      await Deno.readFile(`${Deno.cwd()}/static/markdown/${project}.md`),
     );
+
     const markup = render(markdown);
-    return ctx.render({ markup: markup, project: project });
+    return ctx.render({ markup: markup });
   },
 };
 
@@ -20,8 +20,10 @@ export default function ProjectPage(props: PageProps) {
   return (
     <GeneralLayout
       title={`Simply Darren | ${props.params.project}`}
+      name={props.params.project}
+      description={`Project Description for ${props.params.project}`}
     >
-      <article>
+      <article class="w-full h-full my-8 flex text-justify justify-center">
         <ProjectPost markup={props.data.markup} />
       </article>
     </GeneralLayout>

@@ -13,5 +13,16 @@ export default function ProjectPost(props: ProjectPostProps) {
     }
   });
 
-  return <div ref={el}></div>;
+  return (
+    <>
+      <div
+        data-color-mode="dark"
+        data-light-theme="light"
+        data-dark-theme="dark"
+        class="w-[60%] markdown-body"
+        ref={el}
+      >
+      </div>
+    </>
+  );
 }
